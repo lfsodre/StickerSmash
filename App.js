@@ -4,9 +4,15 @@ import { View, Text, TextInput, Button, ImageBackground, StyleSheet } from 'reac
 const LoginScreen = () => {
   return (
     <ImageBackground
-      source={{ uri: 'https://images.unsplash.com/photo-1679057001914-59ab4131dfff?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} // Troque pela URL da sua imagem ou use require para um arquivo local
+      source={{ uri: 'https://images.unsplash.com/photo-1679065236532-09c4a500a025?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }}
       style={styles.background}
     >
+      {/*Other options:
+      DISCORD - https://images.unsplash.com/photo-1679057001914-59ab4131dfff?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+      TWITTER - https://images.unsplash.com/photo-1679061399645-f2d8eccd7328?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+      YOUTUBE - https://images.unsplash.com/photo-1679094837433-32484a621c74?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+      TWITCH  - https://images.unsplash.com/photo-1679065236532-09c4a500a025?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+      */}
       <View style={styles.overlay}>
         <Text style={styles.title}>AVIATION BLOG</Text>
         <View style={styles.inputContainer}>
@@ -15,6 +21,7 @@ const LoginScreen = () => {
             style={styles.input}
             placeholder="ex: luis.sodre"
             placeholderTextColor="#999"
+            required
           />
           <Text style={styles.label}>PASSWORD:</Text>
           <TextInput
@@ -23,7 +30,8 @@ const LoginScreen = () => {
             placeholderTextColor="#999"
             secureTextEntry
           />
-          <Button title="Entrar" onPress={() => {}} />
+          {/*Inclua o endereço destino ao clicar no Botão*/}
+          <Button title="Entrar" onPress={() => {}}/>
         </View>
       </View>
     </ImageBackground>
@@ -37,7 +45,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   overlay: {
-    backgroundColor: 'rgba(255, 255, 255, 0.1)', // Efeito glass
+    backgroundColor: 'rgba(255, 255, 255, 0.1)', // GLASS EFFECT
     padding: 20,
     borderRadius: 10,
     borderWidth: 1,
