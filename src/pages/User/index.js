@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet, TouchableOpacity } from 'react-native';
 
-export default function Home({navigation}) {
+export default function User({navigation}) {
     return (
         <View style={styles.background}>
             <View style={styles.overlay}>
@@ -10,9 +10,9 @@ export default function Home({navigation}) {
                 {/* Botão CARDS */}
                 <TouchableOpacity
                     style={styles.button}
-                    onPress={() => navigation.navigate('User')}
+                    onPress={() => navigation.navigate('Home')}
                 >
-                    <Text style={styles.buttonText}> USER </Text>
+                    <Text style={styles.buttonText}> CARD </Text>
                 </TouchableOpacity>
 
                 {/* Botão SAIR */}

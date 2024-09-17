@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './src/pages/Home'
 import Login from './src/pages/Login'
+import User from './src/pages/User'
 
 const Stack = createNativeStackNavigator();
 
@@ -14,19 +15,42 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Login'>
         <Stack.Screen
-          name="Home"
-          component={Home}
+          name="LOGIN PAGE"
+          component={Login}
           options={{
+            headerTitleAlign: 'center',
             headerTintColor: '#FFF',
-            headerStyle: {backgroundColor: '#292929'},
+            headerStyle: {
+              backgroundColor: '#292929',
+              borderBottomWidth: 0,  // Remove a linha inferior do cabeçalho
+              elevation: 0,          // Remove sombra no Android
+            },
           }}
         />
         <Stack.Screen
-          name="Login"
-          component={Login}
+          name="Home"
+          component={Home}
           options={{
+            headerTitleAlign: 'center',
             headerTintColor: '#FFF',
-            headerStyle: {backgroundColor: '#292929'},
+            headerStyle: {
+              backgroundColor: '#292929',
+              borderBottomWidth: 0,  // Remove a linha inferior do cabeçalho
+              elevation: 0,          // Remove sombra no Android
+            },
+          }}
+        />
+        <Stack.Screen
+          name="User"
+          component={User}
+          options={{
+            headerTitleAlign: 'center',
+            headerTintColor: '#FFF',
+            headerStyle: {
+              backgroundColor: '#292929',
+              borderBottomWidth: 0,  // Remove a linha inferior do cabeçalho
+              elevation: 0,          // Remove sombra no Android
+            },
           }}
         />
       </Stack.Navigator>

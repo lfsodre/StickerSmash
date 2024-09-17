@@ -5,23 +5,22 @@ export default function Login({navigation}) {
     return (
         <View style={styles.background}>
           <View style={styles.overlay}>
-            <Text style={styles.title}>AVIATION BLOG</Text>
+            <Text style={styles.title}> AVIATION BLOG </Text>
             <View style={styles.inputContainer}>
             <Text style={styles.label}>USER:</Text>
             <TextInput
                 style={styles.input}
                 placeholder="ex: luis.sodre"
-                placeholderTextColor="#999"
+                placeholderTextColor="#FFF"
                 required
             />
             <Text style={styles.label}>PASSWORD:</Text>
             <TextInput
                 style={styles.input}
                 placeholder="password"
-                placeholderTextColor="#999"
+                placeholderTextColor="#FFF"
                 secureTextEntry
             />
-            {/*Inclua o endereço destino ao clicar no Botão*/}
             <Button
               title="Entrar"
               onPress={ () => navigation.navigate('Home')}  
@@ -54,6 +53,7 @@ const styles = StyleSheet.create({
       color: '#fff',
       textAlign: 'center',
       marginBottom: 20,
+      letterSpacing: -4,
     },
     inputContainer: {
       width: 300,
