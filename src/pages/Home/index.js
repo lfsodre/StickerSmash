@@ -5,7 +5,16 @@ export default function Home({navigation}) {
     return (
         <View style={styles.background}>
           <View style={styles.overlay}>
-            <Text style={styles.label}> Home </Text>
+            <Text style={styles.label}> POST1 </Text>
+          </View>
+
+
+          <View style={styles.overlay}>
+            <Text style={styles.label}> POST2 </Text>
+          </View>
+
+          {/* FOOTER */}
+          <View style={styles.footer}>
 
             {/* BUTTON - CARDS */}
             <TouchableOpacity
@@ -22,16 +31,6 @@ export default function Home({navigation}) {
             </TouchableOpacity>
           </View>
 
-
-          <View style={styles.overlay}>
-            <Text style={styles.label}> POST2 </Text>
-          </View>
-
-          {/* FOOTER */}
-          <View style={styles.footer}>
-                <Text style={styles.footerText}>Footer - Direitos Reservados</Text>
-          </View>
-
         </View>
     );
 }
@@ -44,13 +43,12 @@ const styles = StyleSheet.create({
   },
   overlay: {
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
-    marginVertical: 5,
-    marginHorizontal: 10,
     padding: 10,
-    borderRadius: 10,
-    borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.3)',
     alignItems: 'center',
+    justifyContent: 'center',
+    height: 310,
+    width: '100%',
   },
   label: {
     fontSize: 36,
@@ -60,19 +58,21 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#1E90FF',
-    paddingVertical: 10,
-    paddingHorizontal: 30,
-    borderRadius: 5,
-    marginBottom: 15,
-    width: '100%',
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    paddingVertical: 10,    // Altura do botão
+    paddingHorizontal: 15,  // Largura do botão
+    marginHorizontal: 1,
+    marginBottom: 10,
+    height: '30%',
+    width: '40%',
     alignItems: 'center',
+    justifyContent: 'center',
   },
   exitButton: {
     backgroundColor: '#FF6347',
   },
   buttonText: {
-    fontSize: 18,
+    fontSize: 12,
     fontWeight: 'bold',
     color: '#fff',
   },
@@ -81,9 +81,6 @@ const styles = StyleSheet.create({
     padding: 10,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  footerText: {
-    fontSize: 16,
-    color: '#fff',
+    flexDirection: 'row'
   },
 });

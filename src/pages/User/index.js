@@ -4,15 +4,9 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 export default function User({navigation}) {
     return (
         <View style={styles.background}>
+          
           <View style={styles.overlay}>
             <Text style={styles.label}> Home </Text>
-
-            {/* Botão CARDS */}
-            <TouchableOpacity
-              style={styles.button}
-              onPress={() => navigation.navigate('Home')}>
-              <Text style={styles.buttonText}> CARD </Text>
-            </TouchableOpacity>
 
             {/* Botão SAIR */}
             <TouchableOpacity
