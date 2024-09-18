@@ -34,9 +34,9 @@ export default function App() {
             headerTitleAlign: 'center',
             headerTintColor: '#FFF',
             headerStyle: {
-              backgroundColor: '#292929',
+              backgroundColor: '#333333',
               borderBottomWidth: 0,  // Remove a linha inferior do cabeçalho
-              elevation: 0,          // Remove sombra no Android
+              elevation: 0,
             },
           }}
         />
@@ -47,7 +47,7 @@ export default function App() {
             headerTitleAlign: 'center',
             headerTintColor: '#FFF',
             headerStyle: {
-              backgroundColor: '#292929',
+              backgroundColor: '#333333',
               borderBottomWidth: 0,  // Remove a linha inferior do cabeçalho
               elevation: 0,          // Remove sombra no Android
             },

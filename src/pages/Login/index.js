@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet, TextInput } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 
 export default function Login({navigation}) {
     return (
@@ -21,10 +21,11 @@ export default function Login({navigation}) {
                 placeholderTextColor="#FFF"
                 secureTextEntry
             />
-            <Button
-              title="Entrar"
-              onPress={ () => navigation.navigate('Home')}  
-            />
+            <TouchableOpacity 
+              style={styles.button}
+              onPress={ () => navigation.navigate('Home')}>
+              <Text style={styles.buttonText}> ENTER </Text>
+            </TouchableOpacity>
             </View>
           </View>
         </View>
@@ -59,7 +60,8 @@ const styles = StyleSheet.create({
       width: 300,
     },
     label: {
-      color: '#fff',
+      color: 'rgba(255, 255, 255, 0.5)',
+      fontSize: 12,
       marginBottom: 5,
     },
     input: {
@@ -68,5 +70,20 @@ const styles = StyleSheet.create({
       marginBottom: 15,
       borderRadius: 5,
       color: '#fff',
+    },
+    button: {
+      backgroundColor: 'rgba(255, 255, 255, 0.8)', // Azul padrão para o botão "CARDS"
+      paddingVertical: 10, // Altura do botão
+      paddingHorizontal: 30, // Largura do botão
+      borderRadius: 5,
+      marginBottom: 15,
+      width: '100%', // Faz o botão ocupar a largura do pai
+      alignItems: 'center',
+    },
+    buttonText: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: '#292929',
+      letterSpacing: -0.2,
     },
   });
