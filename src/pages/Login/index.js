@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     overlay: {
       backgroundColor: 'rgba(255, 255, 255, 0.1)', // GLASS EFFECT
       padding: 20,
+      marginBottom: 50,
       borderRadius: 10,
       borderWidth: 1,
       borderColor: 'rgba(255, 255, 255, 0.3)',
@@ -53,7 +54,6 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
       color: '#fff',
       textAlign: 'center',
-      marginBottom: 20,
       letterSpacing: -4,
     },
     inputContainer: {
@@ -76,7 +76,6 @@ const styles = StyleSheet.create({
       paddingVertical: 10, // Altura do botão
       paddingHorizontal: 30, // Largura do botão
       borderRadius: 5,
-      marginBottom: 15,
       width: '100%', // Faz o botão ocupar a largura do pai
       alignItems: 'center',
     },

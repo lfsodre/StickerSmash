@@ -8,6 +8,9 @@ export default function Home({navigation}) {
             <Text style={styles.label}> POST1 </Text>
           </View>
 
+          <View style={styles.interaction}>
+            <Image/>
+          </View>
 
           <View style={styles.overlay}>
             <Text style={styles.label}> POST2 </Text>
@@ -49,6 +52,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     height: 310,
     width: '100%',
+    marginBottom: 5,
   },
   label: {
     fontSize: 36,
