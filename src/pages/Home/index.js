@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default function Home({navigation}) {
     return (
@@ -22,14 +22,14 @@ export default function Home({navigation}) {
             {/* BUTTON - CARDS */}
             <TouchableOpacity
                 style={styles.button}
-                onPress={() => navigation.navigate('User')}>
+                onPress={() => navigation.navigate('USER PAGE')}>
                 <Text style={styles.buttonText}> USER </Text>
             </TouchableOpacity>
 
             {/* BUTTON - BACK */}
             <TouchableOpacity
               style={[styles.button, styles.exitButton]}
-              onPress={() => navigation.navigate('Login')}>
+              onPress={() => navigation.navigate('LOGIN PAGE')}>
               <Text style={styles.buttonText}> SAIR </Text>
             </TouchableOpacity>
           </View>
@@ -63,12 +63,9 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
-    paddingVertical: 10,    // Altura do botão
-    paddingHorizontal: 15,  // Largura do botão
-    marginHorizontal: 1,
-    marginBottom: 10,
-    height: '30%',
+    height: '40%',
     width: '40%',
+    marginHorizontal: 5,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -82,7 +79,8 @@ const styles = StyleSheet.create({
   },
   footer: {
     backgroundColor: '#333333',
-    padding: 10,
+    height: '10%',
+    width:  400,
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row'

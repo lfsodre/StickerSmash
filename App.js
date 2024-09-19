@@ -28,7 +28,7 @@ export default function App() {
           }}
         />
         <Stack.Screen
-          name="Home"
+          name="HOME PAGE"
           component={Home}
           options={{
             headerTitleAlign: 'center',
@@ -41,7 +41,7 @@ export default function App() {
           }}
         />
         <Stack.Screen
-          name="User"
+          name="USER PAGE"
           component={User}
           options={{
             headerTitleAlign: 'center',
