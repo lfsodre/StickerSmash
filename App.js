@@ -57,3 +57,6 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+/*--PARA INICIAR A APLICAÇÃO--*/
+/*-------npx expo start-------*/
