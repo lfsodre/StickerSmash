@@ -13,6 +13,7 @@ export default function Home({navigation}) {
           </View>
 
           <View style={styles.overlay}>
+            <Image style={styles.post} source={require("C:/DEV_P/MOBILE/StickerSmash/assets/img/post3.jpg")}/>
             <Text style={styles.label}> POST2 </Text>
           </View>
 
@@ -55,11 +56,14 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   label: {
+    backgroundColor: 'blue',
     fontSize: 36,
     fontWeight: 'bold',
     color: '#fff',
     textAlign: 'center',
-    marginBottom: 20,
+    justifyContent: 'center',
+    height: '98%',
+    width: '98%',
   },
   button: {
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
